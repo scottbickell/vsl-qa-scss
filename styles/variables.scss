@@ -4,39 +4,40 @@
 $primary-color: #005587;
 
 ///.primary-color-light
-$primary-color-light: lighten($primary-color, 25%);
+$primary-color-light: lighten($primary-color, 20%);
 
 ///.primary-color-dark
-$primary-color-dark: darken($primary-color, 25%);
+$primary-color-dark: darken($primary-color, 10%);
 
 ///.secondary-color
 $secondary-color: #009bdf;
 
 ///.secondary-color-light
-$secondary-color-light: lighten($secondary-color, 25%);
+$secondary-color-light: lighten($secondary-color, 20%);
 
 ///.secondary-color-dark
-$secondary-color-dark: darken($secondary-color, 25%);
+$secondary-color-dark: darken($secondary-color, 10%);
 
 ///.accent-color
-$accent-color: #009bdf;
+$accent-color: #4a4f55;
 
 ///.accent-color-light
-$accent-color-light: lighten($accent-color, 25%);
+$accent-color-light: lighten($accent-color, 20%);
 
 ///.accent-color-dark
-$accent-color-dark: darken($accent-color, 25%);
+$accent-color-dark: darken($accent-color, 10%);
 
 // vsl colors
 
-// .vsl-blue-dark
-$vsl-blue-dark: $primary-color;
+// .vsl-blue-primary
+$vsl-blue-primary: $primary-color;
 
-// .vsl-blue-light
-$vsl-blue-light: $secondary-color;
+// .vsl-blue-secondary
+$vsl-blue-secondary: $secondary-color;
 
 // .i-am-more-red
 $i-am-more-red: #c51f37;
+
 
 // .i-am-more-purple
 $i-am-more-purple: #351c55;
@@ -47,20 +48,8 @@ $vsl-math-green: #76bd22;
 // .vsl-literacy-yellow
 $vsl-literacy-yellow: #ffbf3d;
 
-// .vsl-professional-development-orange
-$vsl-professional-development-orange: #ff6d10;
-
-// .vsl-red-dark
-$vsl-red-dark: #ac0b3d;
-
-// .vsl-purple-dark
-$vsl-purple-dark: #522d6d;
-
-// .vsl-purple-light
-$vsl-purple-light: #86339a;
-
-// .vsl-gray-dark
-$vsl-gray-dark: #4a4f55;
+// .vsl-pd-orange
+$vsl-pd-orange: #ff6d10;
 
 
 ///:root
@@ -99,7 +88,7 @@ $li_line-height:1.643em;
 
 ///p, .p, article, .article
 $p_font-size: 1rem;
-$p_line-height: 2rem;
+$p_line-height: 1.5rem;
 $p_padding:15px 0 0;
 $p_margin-bottom:$p_line-height;
 

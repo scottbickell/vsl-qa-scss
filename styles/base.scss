@@ -273,11 +273,11 @@ h6 small, h6 .small, .h6 small, .h6 .small {
 }
 
 .accent-color-light {
-    color: $accent-color;
+    color: $accent-color-light;
 }
 
 .accent-color-light_background {
-    background-color: $accent-color;
+    background-color: $accent-color-light;
 }
 
 .accent-color-dark {
@@ -288,6 +288,53 @@ h6 small, h6 .small, .h6 small, .h6 .small {
     background-color: $accent-color-dark;
 }
 
+.i-am-more-red {
+    color: $i-am-more-red;
+}
+
+.i-am-more-red_background {
+    background-color: $i-am-more-red;
+}
+
+.i-am-more-purple {
+    color: $i-am-more-purple;
+}
+
+.i-am-more-purple_background {
+    background-color: $i-am-more-purple;
+}
+
+.vsl-blue-primary {
+    color: $vsl-blue-primary;
+}
+
+.vsl-blue-secondary {
+    color: $vsl-blue-secondary;
+}
+
+.vsl-math-green {
+    color: $vsl-math-green;
+}
+
+.vsl-math-green_background {
+    background-color: $vsl-math-green;
+}
+
+.vsl-literacy-yellow {
+    color: $vsl-literacy-yellow;
+}
+
+.vsl-literacy-yellow_background {
+    background-color: $vsl-literacy-yellow;
+}
+
+.vsl-pd-orange {
+    color: $vsl-pd-orange;
+}
+
+.vsl-pd-orange_background {
+    background-color: $vsl-pd-orange;
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {

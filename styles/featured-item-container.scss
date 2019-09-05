@@ -1,0 +1,44 @@
+// pre defined fixed heights. required to make the button align to the bottom
+
+.fixed-height-desktop-250 {
+    height: 250px;
+}
+
+.fixed-height-desktop-300 {
+    height: 300px;
+}
+
+.fixed-height-desktop-350 {
+    height: 350px;
+}
+
+.fixed-height-desktop-400 {
+    height: 400px;
+}
+
+// apply this class to any button that needs to align to the bottom of the container
+
+.button-bottom {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+}
+
+// undo the container fixed height on mobile
+
+@media screen and (max-width: 1000px) {
+
+    .fixed-height-desktop-250,
+    .fixed-height-desktop-300,
+    .fixed-height-desktop-350,
+    .fixed-height-desktop-400 {
+        height: auto;
+    }
+
+    .button-bottom {
+        position: relative;
+        bottom: auto;
+        display: inline-block;
+    }
+
+}
