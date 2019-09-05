@@ -1,0 +1,325 @@
+﻿@import "variables";
+
+.product-navigation-layout {
+    background-color: $primary-color;
+    box-shadow: 0 2px 5px #333;
+}
+
+.product-nav-wrapper {
+    margin: 0;
+    padding: 0;
+
+    > div {
+        padding: 0;
+    }
+}
+
+.product-nav {
+    height: 60px;
+    margin: 0;
+
+    &.inline {
+        height: auto;
+        min-height: 60px;
+
+        li {
+        display:block;
+        width:100%;
+        border-top:inherit;
+        a {
+            padding: 15px;            
+
+            span {
+                bottom: 0;
+                top:10px;
+                width: 100%;
+                float: none;
+                text-transform: none;
+                line-height: 1.5;                
+                font-size:1em
+            }
+        }
+    }
+}
+    }
+
+.product-nav li {
+    float: left;
+    width: 20%;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+    border-right: 1px solid #566575;
+    border-top: 1px solid #566575;
+    border-bottom: 1px solid #566575;
+    padding: 0;
+}
+
+.product-nav li:first-child {
+    border-left: 1px solid #566575;
+}
+
+.product-nav li a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.product-nav li a > span {
+    bottom: 0;
+    position: absolute;
+    color: #88d0e5;
+    text-transform: uppercase;
+    font-size: 0.6429rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+}
+
+.product-nav li a:hover span,
+.product-nav li a:focus span,
+.product-nav li.active a span {
+    color: #fff;
+}
+
+
+.product-nav li a > span:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    background-repeat: no-repeat;
+}
+
+.product-nav li a > span span {
+    display: initial;
+}
+
+.overview span:before {
+    height: 20px;
+    width: 20px;
+    background-image: url('../../images/icons/overview_idle.png');
+}
+
+.overview:hover span:before,
+.overview:focus span:before,
+li.active .overview span:before {
+    background-image: url('../../images/icons/overview_active.png');
+}
+
+
+.research-results span:before {
+    background-image: url('../../images/icons/research_idle.png');
+    height: 18px;
+    width: 18px;
+}
+
+.research-results:hover span:before,
+.research-results:focus span:before,
+li.active .research-results span:before {
+    background-image: url('../../images/icons/research_active.png');
+}
+
+.training-support span:before {
+    background-image: url('../../images/icons/training_idle.png');
+    height: 18px;
+    width: 18px;
+}
+
+.training-support:hover span:before,
+.training-support:focus span:before,
+li.active .training-support span:before {
+    background-image: url('../../images/icons/training_active.png');
+}
+
+.pricing span:before {
+    background-image: url('../../images/icons/pricing_idle.png');
+    height: 18px;
+    width: 18px;
+}
+
+.pricing:hover span:before,
+.pricing:focus span:before,
+li.active .pricing span:before {
+    background-image: url('../../images/icons/pricing_active.png');
+}
+
+.button-nav {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 10px 5px;
+}
+
+ul.button-nav li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.button-nav li:before {
+    content: none;
+}
+
+
+.button-nav li a {
+    max-width: none;
+    font-size: 1.0769rem;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.button-nav li a span {
+    position: relative;
+    margin-left: 25px;
+}
+
+.button-nav li a span:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+    left: -22px;
+}
+
+.button-nav .btn {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.try-it span:before {
+    background-image: url('../../images/icons/tryit_idle.png');
+    height: 20px;
+    width: 15px;
+    top: 1px;
+}
+
+.try-it:hover span:before {
+    background-image: url('../../images/icons/tryit_active.png');
+}
+
+.button-nav li a.start-interactive-tour span {
+    margin-left: 0;
+}
+
+.contact-sales span:before {
+    background-image: url('../../images/icons/contact_idle.png');
+    height: 20px;
+    width: 20px;
+}
+.contact-sales:hover span:before {
+    background-image: url('../../images/icons/contact_active.png');
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .product-nav {
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .product-nav li:first-child,
+    .product-nav li {
+        float: none;
+        width: auto;
+        position: relative;
+        border: none;
+    }
+
+    .product-nav li a {
+        height: auto;
+        width: auto;
+        padding: 5px 30px;
+    }
+
+    .product-nav li a span {
+        font-size: 1rem;
+        bottom: 0;
+        position: relative;
+        color: #88d0e5;
+        text-align: center;
+    }
+
+
+    .product-nav li a > span:before {
+        content: "";
+        position: relative;
+        display: inline-block;
+        left: -4px;
+        transform: none;
+        bottom: 0;
+        background-repeat: no-repeat;
+        top: 6px;
+    }
+
+    .button-nav {
+        padding: 0 0 10px;
+    }
+
+    .product-nav {
+
+    &.inline {
+        
+        li {
+            display:inline-block;
+            width:auto;
+            top:10px;
+            &:after {
+                content: "|";
+                color: #1D2D3D;
+                font-size: 2em;
+                display: inline;
+                text-shadow: -1px 0px 0px rgba(133, 156, 167, 1);
+            }
+
+            &:last-child:after {
+                content: "";
+            }
+
+            a {
+                padding:10px;        
+                span{
+                    top:auto;
+                }
+            }
+        }
+    }
+}
+
+}
+
+@media only screen and (min-width : 992px) {
+
+    .product-navigation-layout {
+        
+    }
+
+    .product-nav-wrapper {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .product-nav {
+        
+    }
+
+    .product-nav li a {
+        padding: 15px;
+    }
+
+    .button-nav {
+        padding: 5px 0;
+        display: inline-block;
+        float: right;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .product-nav-wrapper {
+        max-width: 1170px;
+    }
+}

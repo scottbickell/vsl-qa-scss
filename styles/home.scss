@@ -1,0 +1,32 @@
+﻿@import "variables";
+
+.home-wrapper {
+    text-align: center;
+}
+
+
+.banner-cta {
+    img {
+        width: 100%;
+    }
+}
+
+.home-wrapper .product-content-wrapper {
+    margin-bottom: 30px;
+}
+
+.home-wrapper .velocity-wrapper img {
+    width: 100%;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .home-wrapper .site-map-listing-wrapper {
+        max-width: 992px;
+    }
+}

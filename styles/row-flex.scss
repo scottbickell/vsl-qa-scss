@@ -1,0 +1,26 @@
+﻿.row-flex,
+.row-flex > div[class*='col-'] {
+    display: flex;
+    -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0;
+}
+
+.row-flex {
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex: 0;
+    -webkit-flex: 0;
+    flex: 0;
+}
+
+.row-flex > div[class*='col-'],
+.container-flex > div[class*='col-'] {
+    margin: -.2px;
+    /* hack adjust for wrapping */
+}

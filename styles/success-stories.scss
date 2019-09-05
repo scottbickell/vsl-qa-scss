@@ -1,0 +1,55 @@
+﻿.success-stories {
+    width: 100%;
+    background-color: #FF6E01;
+
+    .section-title{
+        color: white;
+        font-size: 1.5714rem;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .story {
+        color: white;
+        padding-bottom: 20px;
+
+        .image {
+            background-color: #FF6E01;
+            height: 125px;
+        }
+
+        .title {
+            font-size: 1.3571rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .text {
+
+        }
+
+        .type{
+        
+            ul {
+                display: inline-block;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+
+                    a, span {
+                        display: inline-block;
+                        text-decoration: none;
+                    }
+                }
+
+                li:not(:last-child) {
+                    a:after, span:after {
+                        content: ",";
+                    }
+                }
+            }
+        }
+    }
+}

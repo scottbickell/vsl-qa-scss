@@ -1,0 +1,10 @@
+extends templates/base.pug
+//- pull in the base template and the html for this page
+
+block variables
+    - var pageTitle =  "LETRS - Research & Results"
+    - var theme = "professional-development"
+
+block content 
+    include ./product-research.html
+    //- the HTML content for this page comes from /src/markup/inner.html. The rest come from the base template

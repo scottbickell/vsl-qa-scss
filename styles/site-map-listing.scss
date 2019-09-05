@@ -1,0 +1,23 @@
+﻿@media only screen and (min-width : 768px) {
+
+    .site-map-listing-wrapper {
+        text-align: left;
+        padding: 25px 0;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .site-map-listing-wrapper ul {
+        width: 20%;
+        box-sizing: border-box;
+        float: left;
+        list-style: none;
+        padding: 15px 0;
+    }
+
+    .site-map-listing-wrapper ul li a {
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 1.0714rem;
+    }
+}

@@ -1,0 +1,45 @@
+//- base template
+doctype html
+html(lang='en')
+    block variables        
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+       
+        title #{pageTitle} | Voyager Sopris Learning
+
+        block styles
+            link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+            link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+            link(rel="stylesheet" href="/css/bundle.min.css")
+            link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
+
+
+    - var themeTag = theme + '-theme'
+
+    body(class=themeTag)
+        div(class="slide-menu-wrapper")
+            //- shared header
+            include ./header.html
+        
+            //- placeholder for content, specified in the .pug file for a page
+            main
+                block content
+
+            //- shared footer
+            include ./footer.html
+        
+            block scripts
+                script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+                script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+                script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+                script(src="http://kendo.cdn.telerik.com/2017.2.504/js/kendo.ui.core.min.js")
+                script(src="/js/lib/jquery.fitvids.js")
+                script(src="/js/global.js")
+                script(src="/js/image-to-background.js")
+                script(src="/js/debounce-on.js")
+                script(src="/js/all-products.js")
+                script(src="https://use.typekit.net/akn0hdz.js")
+                script.
+                    try{Typekit.load({ async: false });}catch(e){}

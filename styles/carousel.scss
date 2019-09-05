@@ -1,0 +1,71 @@
+﻿@import 'variables';
+
+.carousel {
+    text-align: center;
+}
+
+.carousel .container {
+    padding: 10px 15px;
+}
+
+.carousel p {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.2;
+    color: rgb(30, 99, 175);
+    padding: 15px;
+}
+
+.carousel img {
+    margin: 30px auto;
+}
+
+.carousel .owl-nav, .owl-carousel .owl-nav {
+    display: none;
+}
+
+.carousel .owl-dots, .owl-carousel .owl-dots {
+    display: block;
+    text-align: center;
+    background-color: #edeeef;
+    padding: 15px;
+}
+
+.carousel .owl-dot, .owl-carousel .owl-dot {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.owl-dots {
+    counter-reset: dots;
+}
+
+.owl-dot:before {
+    counter-increment: dots;
+    content: counter(dots);
+    font-size:1.0714rem;
+    font-weight:700;
+}
+
+.owl-dot.active:before {
+    font-size: 1.5rem;
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+    .carousel .container {
+        padding: 50px 15px;
+    }
+
+    .carousel p {
+        font-size: 1.7857rem;
+        margin: 0;
+    }
+
+    .carousel img {
+        max-width: 600px;
+    }
+}

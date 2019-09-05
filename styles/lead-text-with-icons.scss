@@ -1,0 +1,48 @@
+﻿.lead-text-with-icons {
+    padding-top: 26px;
+}
+
+.icon-wrapper img {
+    padding: 15px;
+    width: 150px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .lead-text-with-icons {
+        padding-top: 50px;
+
+
+        p {
+            font-size: 1.2857rem;
+        }
+    }
+
+    .icon-wrapper {
+        width: 70%;
+        margin: 50px auto;
+    }
+
+    .product-icon-list {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .lead-text-with-icons {
+        padding-top: 62px;
+        padding-left: 8.33333333%;
+        padding-right: 8.33333333%;
+    }
+
+
+    .icon-wrapper {
+        width: 80%;
+    }
+
+    .icon-wrapper img {
+        width: 190px;
+    }
+}

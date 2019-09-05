@@ -1,0 +1,13 @@
+extends templates/base.pug
+//- pull in the base template and the html for this page
+
+block variables
+    - var pageTitle =  "Products"
+    - var theme = "default"
+
+block content 
+    include ./all-products.html
+    //- the HTML conontent for this page comes from /src/markup/inner.html. The rest come from the base template
+
+block append scripts
+    script(src="/js/all-products.js")

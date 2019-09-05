@@ -1,0 +1,54 @@
+﻿.feature-card {
+    min-height: 195px;
+    margin: 0 auto;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+
+    .card-content {
+        position: relative;
+        padding: 50px 0;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .feature-card {
+        min-height: 420px;
+        background-position: center;
+        background-size: initial;
+
+        .card-content {
+            padding: 130px 50px 50px 0;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+    .feature-card {
+        min-height: 540px;
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+
+    .feature-card {
+        height: 600px;
+    }
+}

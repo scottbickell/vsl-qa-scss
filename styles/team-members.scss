@@ -1,0 +1,163 @@
+﻿.team-members {
+    padding-top: 50px;
+
+    &.image-as-background {
+        background-image: url('../../images/background-pattern-white.png');
+        background-position: center top;
+        background-repeat: repeat-x;
+        background-size: auto;
+    }
+
+    .event-summary {
+        margin-bottom: 50px;
+        text-align: center;
+
+        p {
+            font-size: 1.2857rem;
+        }
+    }
+
+    .team-type {
+        overflow: hidden;
+
+        .header {
+            font-size: 1.1429rem;
+            color: #fff;
+            background-color: #435465;
+            padding: 20px;
+            margin-bottom: 15px;
+            position: relative;
+            cursor: pointer;
+
+            &:after {
+                content: ">>";
+                position: absolute;
+                right: 35px;
+                transition: .25s;
+            }
+        }
+
+        &.open {
+            .header:after {
+                transform: rotate(90deg);
+            }
+
+            .team-grid {
+                /*max-height: 1000em;*/
+            }
+        }
+
+        .team-grid {
+            height: auto;
+            text-align: center;
+
+            .member {
+                box-sizing: border-box;
+                display: inline-block;
+                background-color: #333;
+                margin: 15px;
+                height: 265px;
+                width: calc(100% - 15px);
+                max-width: 250px;
+                text-align: center;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
+
+                .info-block {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 170px;
+                    left: 0;
+                    transition: .5s;
+                    padding: 15px;
+                    background-color: rgba(23, 69, 133, .8);
+                    /*TO KEEP BLUR TOP EFFECT, KEEP GRADIANT TOP COLOR OPACITY .05 FROM BOX-SHADOW COLOR OPACITY*/
+                    background: linear-gradient( rgba(25, 72, 146, .7), rgba(29, 133, 182, .7));
+                    box-shadow: 0 0 15px 10px rgba(25, 72, 146, .65);
+
+                    .name {
+                        font-size: 1.4286rem;
+                        text-transform: uppercase;
+                        position: relative;
+                        top: -15px;
+                        transition: .5s;
+                        color: #fff; //iOS safari
+                    }
+
+                    .position {
+                        font-size: 1.1428rem;
+                        font-weight: 700;
+                        margin-bottom: 25px;
+                        position: relative;
+                        top: -15px;
+                        transition: .5s;
+                        color: #fff; //iOS safari
+                    }
+
+                    .location,
+                    .book,
+                    .phone {
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+                        color: #fff; //iOS safari
+                    }
+                    //Safari automatically converts phone # lookalikes to a tags.
+                    .phone a {
+                        color: #fff; //iOS safari
+                        text-decoration: none; //iOS safari
+                    }
+
+                    .phone:before,
+                    .email:before {
+                        font-family: fontAwesome;
+                        padding-right: 5px;
+                        color: #fff; //iOS safari
+                    }
+
+                    .phone:before {
+                        content: '\f095';
+                    }
+
+                    .email:before {
+                        content: '\f003';
+                    }
+
+                    .email {
+                        font-size: 0.85rem;
+                        margin-bottom: 5px;
+                        color: #fff; //iOS safari
+                    }
+                }
+
+                &:hover .info-block {
+                    top: 0;
+
+                    .name,
+                    .position {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    } 
+} 
+
+@media only screen and (min-width: 768px) {
+    .team-members {
+        .team-type {
+            .header {
+                font-size: 1.7857rem;
+            }
+
+            .team-grid {
+                .member {
+                    width: calc(50% - 30px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+@import "variables";
+
+.btn {
+    display: $btn_display;
+    margin-bottom: $btn_margin-bottom;
+    font-weight: $btn_font-weight;
+    text-align: $btn_text-align;
+    vertical-align: $btn_vertical-align;
+    touch-action: $btn_touch-action;
+    cursor: $btn_cursor;
+    background-image: $btn_background-image;
+    border: $btn_border;
+    white-space: $btn_white-space;
+    padding: $btn_padding;
+    font-family: $btn_font-family;
+    font-size: $btn_font-size;
+    line-height: $btn_line-height;
+    border-radius: $btn_border-radius;
+    text-decoration: $btn_text-decoration !important;
+    text-transform: $btn_text-transform;
+    width: $btn_width;
+    max-width: $btn_max-width;
+    transition: $btn_transition;
+    -webkit-user-select: $btn_user-select;
+    -moz-user-select: $btn_user-select;
+    -ms-user-select: $btn_user-select;
+    user-select: $btn_user-select;
+    box-shadow: $btn_box-shadow;
+}
+
+.btn:focus, .btn.focus,
+.btn:active:focus, .btn:active.focus,
+.btn.active:focus, .btn.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus, .btn.focus {
+    color: $btn-hover_color;
+    text-decoration: $btn-hover_text-decoration !important;
+}
+
+.btn:active, .btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+a.btn.disabled,
+fieldset[disabled] a.btn {
+    pointer-events: none;
+}
+
+.btn-primary {
+    color: $btn-primary_color;
+    background-color: $btn-primary_background-color;
+    border-color: $btn-primary_border-color;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: $btn-primary-focus_color;
+    background-color: $btn-primary-focus_background-color;
+    border-color: $btn-primary-focus_border-color;
+}
+
+.btn-primary:hover, .btn-primary.hover {
+    color: $btn-primary-hover_color;
+    background-color: $btn-primary-hover_background-color;
+    border-color: $btn-primary-hover_border-color;
+}
+
+.btn-primary:active, .btn-primary.active,
+.open > .btn-primary.dropdown-toggle {
+    color: $btn-primary-active_color;
+    background-color: $btn-primary-active_background-color;
+    border-color: $btn-primary-active_border-color;
+}
+
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
+.open > .btn-primary.dropdown-toggle:hover,
+.open > .btn-primary.dropdown-toggle:focus,
+.open > .btn-primary.dropdown-toggle.focus {
+    color: $btn-primary-active_color;
+    background-color: $btn-primary-active_background-color;
+    border-color: $btn-primary-active_border-color;
+}
+
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: $btn-primary-disabled_background-color;
+    border-color: $btn-primary-disabled_border-color;
+}
+
+.btn-primary .badge {
+    color: $btn-primary-badge_color;
+    background-color: $btn-primary-badge_background-color;
+}
+
+
+p, .p {
+    a.btn-secondary {
+        color: $btn-secondary_color;
+    }
+}
+
+.btn-secondary {
+    color: $btn-secondary_color;
+    background-color: $btn-secondary_background-color;
+    border-color: $btn-secondary_border-color;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+    color: $btn-secondary-focus_color;
+    background-color: $btn-secondary-focus_background-color;
+    border-color: $btn-secondary-focus_border-color;
+}
+
+.btn-secondary:hover, .btn-secondary.hover {
+    color: $btn-secondary-hover_color;
+    background-color: $btn-secondary-hover_background-color;
+    border-color: $btn-secondary-hover_border-color;
+}
+
+.btn-secondary:active, .btn-secondary.active,
+.open > .btn-secondary.dropdown-toggle {
+    color: $btn-secondary-active_color;
+    background-color: $btn-secondary-active_background-color;
+    border-color: $btn-secondary-active_border-color;
+}
+
+.btn-secondary:active:hover, .btn-secondary:active:focus, .btn-secondary:active.focus, .btn-secondary.active:hover, .btn-secondary.active:focus, .btn-secondary.active.focus,
+.open > .btn-secondary.dropdown-toggle:hover,
+.open > .btn-secondary.dropdown-toggle:focus,
+.open > .btn-secondary.dropdown-toggle.focus {
+    color: $btn-secondary-active_color;
+    background-color: $btn-secondary-active_background-color;
+    border-color: $btn-secondary-active_border-color;
+}
+
+.btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary:hover,
+fieldset[disabled] .btn-secondary:focus,
+fieldset[disabled] .btn-secondary.focus {
+    background-color: $btn-secondary-disabled_background-color;
+    border-color: $btn-secondary-disabled_border-color;
+}
+
+.btn-secondary .badge {
+    color: $btn-secondary-badge_color;
+    background-color: $btn-secondary-badge_background-color;
+}
+
+.btn-learn-more {
+    border: 3px solid $body_color;
+    color: $body_color;
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}

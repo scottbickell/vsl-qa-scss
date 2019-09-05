@@ -1,0 +1,23 @@
+﻿.research-results-layout {
+    .container {
+        padding: 50px 15px;
+    }
+
+    .stat-box {
+        padding-bottom: 40px;
+    }
+}
+
+.stat-number {
+    font-size: 2.2857rem;
+    font-weight: 700;
+    font-family: myriad-pro;
+    text-align: center;    
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .stat-number {
+        font-size: 3.2857rem;
+    }
+}

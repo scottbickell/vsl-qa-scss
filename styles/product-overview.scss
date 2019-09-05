@@ -1,0 +1,29 @@
+﻿
+.page-summary {
+    padding: 50px 15px;
+    text-align: left;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+}
+
+.page-summary .btn {
+    width: auto;
+    max-width: none;
+}
+
+.product-overview .section-title {
+    padding: 20px 15px 10px;
+    font-size: 1.4286rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .product-overview .section-title {
+        padding: 20px 15px;
+        font-size: 1.7857rem;
+    }
+}

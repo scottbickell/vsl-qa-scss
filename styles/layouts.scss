@@ -1,0 +1,54 @@
+﻿.general-2-column .container {
+    padding: 15px;
+}
+
+.quote-left, .quote-right {
+    padding: 15px;    
+    border: 6px solid #86569B;
+}
+
+.quote-left {
+    border-width: 6px 0px 0px 6px;
+}
+
+.quote-right {
+    border-width: 6px 6px 0px 0px;
+}
+
+.banner.product-banner.basic{
+    height:150px;
+}
+
+.mb40{
+    margin-bottom:40px;
+}
+
+.product-section{
+    margin-bottom:1px solid;
+    padding-bottom:15px;
+}
+
+/*.general-2-column h3 {
+    font-weight: 700;
+}*/
+
+/*.general-2-column .container p {
+    font-size: 1rem;
+    line-height: 1.571;
+    font-weight: 700;
+}*/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .general-2-column .container {
+        padding: 60px 15px;
+    }
+
+    /*.general-2-column .video {
+        padding: 0 10px;
+    }
+
+    .general-2-column h3 {
+        font-size: 1.7857rem;
+    }*/ 
+}

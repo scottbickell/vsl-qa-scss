@@ -1,0 +1,64 @@
+﻿
+.check-list-card {
+    background-color: $primary-color;
+    color: #fff;
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+.check-list-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.check-list-card li {
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 40px;
+}
+
+
+.check-list-card li:before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../images/icons/check-mark-icon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .check-list-card {
+        font-size: 1.5714rem;
+    }
+
+    .check-list-card li:before {
+        width: 30px;
+        height: 30px;
+        top: -1px;
+    }
+
+    .check-list-card ul {
+        margin: 0 auto;
+    }
+}

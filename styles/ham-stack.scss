@@ -1,0 +1,47 @@
+﻿.ham-stack {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+    width: 32px;
+}
+
+.ham {
+    background-color: #435465;
+    display: block;
+    height: 4px;
+    left: 0;
+    position: relative;
+    top: 0px;
+    transform: rotate(0deg);
+    transition: .5s;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.navbar-toggle.collapsed .ham-to-x .ham {
+    left: 0;
+    margin-top: 5px;
+    position: relative;
+    top: 0px;
+    transform: rotate(0deg);
+    width: 100%;
+}
+
+.ham-to-x .ham:first-child {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.ham-to-x .ham:nth-child(2) {
+    left: 10em;
+    top: 4px;
+}
+
+.ham-to-x .ham:last-child {
+    top: -9px;
+    transform: rotate(-45deg);
+}

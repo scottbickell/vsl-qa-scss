@@ -1,0 +1,168 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,400,400i,700,700i,900,900i&display=swap');
+@import "base";
+@import "header";
+@import "site-footer";
+@import "home";
+@import "product-navigation";
+@import "product-overview";
+@import "research-results-layout";
+@import "banner";
+@import "ham-stack";
+@import "news-blog";
+@import "site-map-listing";
+@import "social-nav";
+@import "carousel";
+@import "bordered-card";
+@import "check-list-card";
+@import "sfPageEditor";
+@import "themes";
+@import "two-col-info-band";
+@import "check-list";
+@import "feature-info-band";
+@import "page-summary";
+@import "general-content-page";
+@import "editor-classes";
+@import "try-it";
+@import "all-products";
+@import "products-grid";
+@import "row-flex";
+@import "image-to-background";
+@import "product-summary";
+@import "lead-text-with-icons";
+@import "order-swapper";
+@import "layouts";
+@import "feature-card";
+@import "blog";
+@import "news";
+@import "resources";
+@import "events";
+@import "search";
+@import "team-members";
+@import "success-stories";
+@import "i-am-more-content";
+@import "buttons";
+
+
+.section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    padding: 20px;
+    font-size: 1.7857rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments {
+    .section-name {
+        .title {
+            a {
+                display: inline-block !important;
+            }
+        }
+    }
+}
+
+.title-light {
+    background-color: #f3f2eb;
+    box-shadow: 0 1px 4px #333;
+    margin-bottom: 2px;
+}
+
+.title-blue {
+    background-color: $accent-color;
+    color: #fff;
+}
+
+.col-20-percent {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.option-link,
+.option-link:hover,
+.option-link:focus {
+    text-decoration: none;
+}
+
+.option-link {
+    position: relative;
+    color: $accent-color;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+.option-link:before {
+    content: "";
+    position: absolute;
+    background-color: $accent-color;
+    display: inline-block;
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: -24px;
+}
+
+.option-link:after {
+    content: "";
+    position: absolute;
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+    top: 4px;
+    left: -20px;
+    background-color: #88d0e5;
+}
+
+.option-link:hover:after {
+    background-color: $secondary-color;
+    border: 1px solid #88d0e5;
+}
+
+.k-animation-container, .k-animation-container *, .k-animation-container :after, .k-block .k-header, .k-list-container, .k-widget, .k-widget *, .k-widget :before, div.k-window-content {
+    box-sizing: border-box;
+}
+
+
+
+/* mixin for multiline */
+/*@mixin multiLineEllipsis($lineHeight: 2em, $lineCount: 4, $bgColor: white) {
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+
+    &:before {
+        content: '...';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        background: $bgColor;
+    }
+}
+
+.limit-text-4-lines {
+    @include multiLineEllipsis($lineHeight: 2em, $lineCount: 4, $bgColor: #F1F1F1);
+}*/

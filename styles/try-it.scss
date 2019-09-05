@@ -1,0 +1,75 @@
+﻿.materials-form {
+    background-color: #f3f2eb;
+    box-shadow: 0 0 5px #aaa;
+    padding: 15px 0;
+
+    .form-title {
+        font-size: 1.5714rem;
+        font-weight: 700;
+        color: #000;
+        display: block;
+        padding: 0;
+
+        small {
+            display: block;
+            font-size: 1.0714rem;
+            font-style: italic;
+            padding: 5px 0;
+        }
+    }
+}
+
+.try-it-description {
+    color: #000;
+    font-size: 1rem;
+    margin: 25px 0;
+}
+
+.try-it-image-grid {
+
+    .container {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    img {
+        width: 33.33%;
+        box-sizing: border-box;
+        float: left;
+        padding: 6px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .try-it-description {
+        margin: 0;
+
+        .container {
+            padding: 0;
+        }
+        a{
+            font-size:0.9286rem
+        }
+    }
+
+    .try-it-image-grid {
+        margin-top: 25px;
+        margin-bottom: 100px;
+
+        .container {
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (min-width : 992px) {
+
+    .try-it-image-grid {
+        img {
+            width: 25%;
+        }
+    }
+}

@@ -1,0 +1,536 @@
+﻿@import "variables";
+
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    height: 185px;
+}
+
+.banner-content {
+    color: #fff;
+    padding: 3px 20px 15px;
+    text-align: center;
+    height: 100%;
+    position: absolute;
+    /*top: 0;*/
+    width: 100%;
+    left: 0;
+
+    h1, .h1 {
+        line-height: 1.094em;
+        max-width: 420px;
+        margin: 15px auto;
+    }
+}
+
+.narrow-banner {
+    .banner-content {
+        padding: 10px 35px 10px 15px;
+
+        p.h3 {
+            margin-bottom: 20px;
+            text-align: justify;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.video-banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-position: top;
+    background-size: cover;
+
+    .wistia_responsive_padding {
+        display: none;
+    }
+
+    .wistia_embed {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.product-banner .banner-content {
+    h1, .h1 {
+        font-size: 1.4286rem;
+        margin: 20px auto;
+    }
+
+    h2, .h2 {
+        font-size: 1.2857rem;
+        line-height: 1.2;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-banner-text {
+        max-width: 400px;
+        position: absolute;
+        text-align: left;
+        overflow: hidden;
+
+        & > div > div:not(:empty) {
+            padding: 15px;
+        }
+    }
+}
+
+.product-logo img {
+    max-height: 45px;
+    width: initial !important; //override carousel image settings
+}
+
+.featured-banner,
+.cta-banner {
+    position: relative;
+
+    p {
+        font-size: 1.2143rem;
+        line-height: 1.294;
+    }
+
+    h3, .h3 {
+        color: #fff;
+        font-size: 1.7857rem;
+    }
+
+    .banner-content {
+        padding: 50px 15px;
+        text-align: left;
+
+        p {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8rem;
+        }
+    }
+
+    strong {
+        font-size: 1.5714rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.cta-banner {
+    min-height: 420px;
+}
+
+.featured-banner {
+    height: auto;
+    min-height: 195px;
+
+    .container {
+        padding: 0;
+    }
+
+    .banner-content {
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product-banner-text {
+        display: none;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .banner {
+        height: 340px;
+    }
+
+    .banner-content-wrapper {
+        display: inline-block;
+        max-width: 768px;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .product-banner .banner-content {
+        h1, .h1 {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .cta-banner .banner-content {
+        top: auto;
+    }
+
+    .video-banner .banner-content {
+        left: calc((100% - 1140px)/2);
+        height: 390px;
+        top: auto;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .banner-content {
+        max-width: 470px;
+        height: auto;
+        top: auto;
+        bottom: 0;
+        position: absolute;
+        left: calc((100% - 750px)/2);
+
+        h1, .h1 {
+            font-size: 3.1429rem;
+            text-align: left;
+        }
+
+        a {
+            font-size: 2.3571rem;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    .banner--home .banner-content {
+        padding: 20px 50px 15px;
+    }
+
+    .video-banner {
+        .wistia_responsive_padding {
+            display: block;
+        }
+
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 340px !important;
+        }
+    }
+
+    .narrow-banner {
+        .banner-content {
+            p.h3 {
+                font-size: 2rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+    .product-banner {
+
+        .container {
+            padding: 0;
+        }
+
+        .banner-content {
+            max-width: none;
+            padding: 15px;
+            height: auto;
+            left: auto;
+            bottom: auto;
+            position: absolute;
+            top: 0;
+
+            h1 {
+                position: relative;
+                top: 0;
+                text-align: center;
+                left: 0;
+                margin: 0 auto 5px;
+                width: 100%;
+                max-width: none;
+            }
+
+            h2 {
+                font-size: 1.4286rem;
+            }
+
+            .product-banner-text {
+                height: 240px;
+                top: 100px;
+                right: calc((100% - 750px)/2);
+            }
+
+            .product-banner-text.reversed {
+                right: inherit;
+                left: calc((100% - 750px)/2);
+            }
+        }
+
+        .product-logo {
+            max-width: 700px;
+            text-align: left;
+            position: absolute;
+            top: 245px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            img {
+                max-height: 75px;
+            }
+        }
+
+        .product-logo.reversed {
+            transform: translateX(25%);
+        }
+    }
+
+    .cta-banner {
+        height: 455px;
+
+        .container {
+            height: 100%;
+        }
+
+        .banner-content {
+            left: calc((100% - 750px) / 2);
+            position: absolute;
+            bottom: 0;
+            text-align: left;
+            max-width: 355px;
+            height: 100%;
+        }
+
+        &.narrow-banner {
+            .banner-content {
+                max-width: 355px;
+                padding: 50px 65px 50px 30px;
+            }
+        }
+
+        a {
+            position: relative;
+            top: auto;
+            font-size: inherit;
+            left: auto;
+        }
+    }
+
+    .cta-banner--right .banner-content {
+        left: auto;
+        right: calc((100% - 750px) / 2);
+    }
+
+    .featured-banner {
+        .banner-content {
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .banner {
+        height: 490px;
+    }
+
+    .video-banner {
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 490px !important;
+        }
+
+        .banner-content {
+            height: 435px;
+        }
+    }
+
+    .banner-content-wrapper {
+        max-width: 992px;
+    }
+
+    .banner-content {
+        bottom: 0;
+        left: calc((100% - 970px)/2);
+        position: absolute;
+        top: auto;
+
+        .btn {
+            margin-top: 40px;
+        }
+    }
+
+    .banner.product-banner {
+        height: 580px;
+    }
+
+    .product-banner {
+        .banner-content {
+            top: 0;
+            height: auto;
+
+            .product-banner-text {
+                height: 320px;
+                top: 260px;
+                right: calc((100% - 970px)/2);
+            }
+
+            .product-banner-text.reversed {
+                right: inherit;
+                left: calc((100% - 970px)/2);
+            }
+        }
+
+        .product-logo {
+            max-width: 977px;
+            top: 450px;
+
+            img {
+                max-height: 100px;
+            }
+        }
+    }
+
+    .cta-banner {
+        height: 515px;
+
+        .banner-content {
+            bottom: 0;
+            height: calc(100% - 65px);
+            padding: 50px 20px;
+        }
+    }
+
+    .banner--home .banner-content {
+        padding: 65px 50px 45px;
+    }
+
+    .featured-banner {
+        .banner-content {
+            padding: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width : 1200px) {
+    .banner {
+        height: 490px;
+    }
+
+    .video-banner {
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 490px !important;
+        }
+    }
+
+    .cta-banner .banner-content {
+        left: calc((100% - 1140px) / 2);
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        max-width: 525px;
+        height: 320px;
+        padding: 20px;
+
+        h1 {
+            margin: 15px auto 35px;
+            max-width: none;
+        }
+    }
+
+    .banner-content {
+        bottom: 0;
+        left: calc((100% - 1140px)/2);
+        position: absolute;
+        top: auto;
+    }
+
+    .cta-banner {
+        &.narrow-banner {
+            .banner-content {
+                left: calc((100% - 1000px) / 2);
+                height: calc(100% - 65px);
+            }
+        }
+    }
+
+    .cta-banner--right .banner-content {
+        left: auto;
+        right: calc((100% - 1140px) / 2);
+    }
+}
+
+@media only screen and (min-width : 1440px) {
+    .banner {
+        height: 588px;
+    }
+
+    .cta-banner .banner-content {
+        max-width: 535px;
+        padding: 25px;
+    }
+
+    .video-banner {
+
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 588px !important;
+        }
+    }
+
+    .cta-banner {
+        &.narrow-banner {
+            .banner-content {
+                height: calc(100% - 165px);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 1740px) {
+    .banner {
+        height: 675px;
+    }
+
+    .banner-content {
+    }
+
+    .video-banner {
+
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 675px !important;
+        }
+    }
+
+    .cta-banner {
+        &.narrow-banner {
+            .banner-content {
+                height: calc(100% - 245px);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 2000px) {
+    .banner {
+        height: 680px;
+    }
+
+    .banner-content {
+    }
+
+    .video-banner {
+        background-image: none !important;
+
+        .wistia_embed,
+        .wistia_embed > div {
+            height: 680px !important;
+        }
+    }
+}

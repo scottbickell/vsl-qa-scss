@@ -1,0 +1,253 @@
+﻿
+/*STYLE GUIDE STYLES */
+
+.style-guide-wrapper
+{
+    margin: 25px auto;
+}
+
+.style-guide-wrapper .style-guide-nav
+{
+    margin:25px 0;
+}
+
+
+.style-guide-wrapper section
+{
+    margin: 50px auto 100px auto;
+}
+
+.style-guide-wrapper .property-display-wrapper
+{
+    min-height: 200px;
+}
+
+.style-guide-wrapper .property-desc-row
+{
+    color: #555;
+    display: table;
+    width: 100%;
+}
+
+.style-guide-wrapper .property-label
+{
+    font-size: 16px !important;
+}
+
+.style-guide-wrapper .end-property
+{
+    font-size: 16px !important;
+}
+
+
+.style-guide-wrapper .property-desc-row:last-child
+{
+    margin-bottom: 25px;
+}
+
+.style-guide-wrapper .property-desc-row > div
+{
+    display: table-cell;
+    padding: 5px 0;
+}
+
+.style-guide-wrapper .property-desc-row > div:first-child
+{
+    width: 35%;
+}
+
+.style-guide-wrapper .font-display-wrapper
+{
+    border: 1px solid #ddd;
+    height: 275px;
+    position: relative;
+}
+
+.style-guide-wrapper .font-display,
+.style-guide-wrapper .font-desc
+{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+}
+
+.style-guide-wrapper .font-display
+{
+    font-size: 120px;
+    left: 25%;
+    line-height: 122px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.style-guide-wrapper h1.font-display
+{
+    font-size: 120px !important;
+}
+
+
+
+.style-guide-wrapper .font-desc
+{
+    font-size: 34px;
+    left: 45%;
+    line-height: 36px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.style-guide-wrapper .typography-display
+{
+    padding-top: 25px;
+}
+
+.style-guide-wrapper .color-block-wrapper
+{
+    border: 1px solid #ddd;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+}
+
+.style-guide-wrapper .color-block
+{
+    height: 185px;
+    width: 185px;
+}
+
+.style-guide-wrapper .color-block-wrapper.block-small
+{
+    margin: 1px;
+    padding: 3px;
+    position: relative;
+}
+
+.style-guide-wrapper .color-block-wrapper.block-small .color-block
+{
+    height: 75px;
+    width: 35px;
+}
+
+.style-guide-wrapper .color-block-wrapper .color-class
+{
+    color: #aaa;
+    font-style: italic;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 0 #333;
+    top: 85px;
+    width: 100%;
+}
+
+.style-guide-wrapper .color-shade-wrapper
+{
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+
+.style-guide-wrapper .btn-display-wrapper
+{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.style-guide-wrapper .btn-class-desc
+{
+    color: #777;
+    font-size: 0.85em;
+    padding: 5px 0;
+    text-shadow: 0 0 0 #333;
+}
+
+.style-guide-wrapper a
+{
+    text-decoration: none;
+}
+
+.style-guide-wrapper a:hover
+{
+    text-decoration:underline;
+}
+
+.inline-edit-all,
+.insert-css,
+.slide-toggle-trigger,
+.revert-to-defaults
+{
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-decoration: none !important;
+}
+
+.inline-edit-all .fa,
+.slide-toggle-trigger .fa,
+.revert-to-defaults .fa
+{
+    margin-left:15px;
+}
+
+.insert-into-head-display div
+{
+    color: #555;
+    padding: 2px 15px;
+    font-size: .75rem;
+}
+.insert-into-head-display > div,
+.style-guide-wrapper .insert-text
+{
+    width: 100%;
+    max-width: 800px;
+    vertical-align: top;
+    background-color: #333;
+    color: #eee;
+    font-family: 'Courier New';
+    font-weight: 700;
+    border:none;
+}
+.insert-into-head-display > div:first-child
+{
+    padding-top:15px;
+}
+.insert-into-head-display > div:last-child
+{
+    padding-bottom: 25px;
+}
+.style-guide-wrapper .insert-text
+{
+    border-top: 1px solid #ccc;
+    padding: 5px 15px;
+}
+
+.slide-toggle-content
+{
+    display:none;
+}
+
+.color-picker
+{
+    height: 32px;
+    top: 7px;
+    position: relative;
+    right: 52px;
+    position: absolute;
+}
+
+::-webkit-input-placeholder
+{ /* Chrome/Opera/Safari */
+    color: #111;
+}
+
+::-moz-placeholder
+{ /* Firefox 19+ */
+    color: #111;
+}
+
+:-ms-input-placeholder
+{ /* IE 10+ */
+    color: #111;
+}
+
+:-moz-placeholder
+{ /* Firefox 18- */
+    color: #111;
+}

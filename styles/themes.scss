@@ -1,0 +1,135 @@
+﻿/*DEFAULT THEME*/
+$default-theme-color: #005587;
+
+.banner-content {
+    background-color: rgba($default-theme-color,.9);
+    
+    .product-banner-text { 
+        background-color: rgba($default-theme-color,.9); 
+    }
+}
+
+.stat-number,
+.bordered-card .card-link {
+    color: $default-theme-color;
+}
+
+.bordered-card,
+.card-link:before {
+    border-color: $default-theme-color;
+}
+
+
+.card-link:after {
+    border-top-color: $default-theme-color;
+}
+
+.default-theme {
+
+    .banner-content {
+        background-color: rgba($default-theme-color,.9);
+    }
+
+    .stat-number,
+    .bordered-card .card-link {
+        color: $default-theme-color;
+    }
+
+    .bordered-card,
+    .card-link:before {
+        border-color: $default-theme-color;
+    }
+
+
+    .card-link:after {
+        border-top-color: $default-theme-color;
+    }
+}
+
+/*LITERACY THEME*/
+$literacy-theme-color: #ffbf3d;
+
+.literacy-theme {
+
+    .banner-content {
+        background-color: rgba($literacy-theme-color,.9);
+    
+        .product-banner-text { 
+            background-color: rgba($literacy-theme-color,.9); 
+        }
+    }
+
+    .stat-number,
+    .bordered-card .card-link {
+        color: $literacy-theme-color;
+    }
+
+    .bordered-card,
+    .card-link:before {
+        border-color: $literacy-theme-color;
+    }
+
+
+    .card-link:after {
+        border-top-color: $literacy-theme-color;
+    }
+}
+
+
+/*MATH THEME*/
+$math-theme-color: #ADD461;
+
+.math-theme {
+
+    .banner-content {
+        background-color: rgba($math-theme-color,.9);
+    
+        .product-banner-text { 
+            background-color: rgba($math-theme-color,.9); 
+        }
+    }
+
+    .stat-number,
+    .bordered-card .card-link {
+        color: $math-theme-color;
+    }
+
+    .bordered-card,
+    .card-link:before {
+        border-color: $math-theme-color;
+    }
+
+
+    .card-link:after {
+        border-top-color: $math-theme-color;
+    }
+}
+
+
+/*PROFESSIONAL DEVELOPMENT THEME*/
+$professional-development-theme-color: #ff6d10;
+
+.professional-development-theme {
+    .banner-content {
+        background-color: rgba($professional-development-theme-color,.9);
+    
+        .product-banner-text { 
+            background-color: rgba($professional-development-theme-color,.9); 
+        }
+    }
+
+    .stat-number,
+    .bordered-card .card-link {
+        color: $professional-development-theme-color;
+    }
+
+    .bordered-card,
+    .card-link:before {
+        border-color: $professional-development-theme-color;
+    }
+
+
+    .card-link:after {
+        border-top-color: $professional-development-theme-color;
+    }
+}

@@ -1,0 +1,87 @@
+﻿.inline-edit-group
+{
+    position: relative;
+}
+
+
+.inline-edit-input,
+.inline-edit-trigger
+{
+    padding: 5px 10px;
+    width: calc(100% - 50px);
+}
+
+.inline-edit-trigger
+{
+    display: inline-block;
+    transition: 1s;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222 !important;
+    border: 2px dotted #ccc;
+    font-size: 16px !important;
+}
+
+.inline-edit-trigger:hover
+{
+    background-color: #ededed;
+    color: #333;
+    border-top: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+
+.inline-edit-input
+{
+    background-color: #efefef;
+    margin-right: 3px;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    font-size: 16px !important;
+}
+
+.inline-edit-update,
+.inline-edit-cancel
+{
+    display: none;
+    font-size: 18px !important;
+}
+
+.inline-edit-cancel .fa,
+.inline-edit-update .fa
+{
+    font-size: 18px !important;
+}
+
+.inline-edit-update:hover,
+.inline-edit-cancel:hover
+{
+    text-shadow: 0 0 2px #333;
+}
+
+
+.inline-edit-update,
+.inline-edit-update:hover,
+.inline-edit-update:active,
+.inline-edit-update:focus
+{
+    color: #58C765 !important;
+}
+
+.inline-edit-cancel,
+.inline-edit-cancel:hover,
+.inline-edit-cancel:active,
+.inline-edit-cancel:focus
+{
+    color: #9E1C11 !important;
+}
+
+.inline-edit-cancel.cancel-all
+{
+    display:inline-block !important;
+}

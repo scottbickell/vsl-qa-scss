@@ -1,0 +1,21 @@
+{
+  "name": "voyagertemplates",
+  "version": "1.0.0",
+  "description": "Voyager - Static Templates for Sitefinity",
+  "author": "Aptera Software, Inc.",
+  "devDependencies": {
+    "es6-promise": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-filelist": "^1.0.0",
+    "gulp-kraken": "^0.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-pug": "^3.2.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-util": "^3.0.7",
+    "html-entities": "^1.2.1"
+  }
+}

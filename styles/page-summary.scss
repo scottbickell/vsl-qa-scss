@@ -1,0 +1,14 @@
+﻿
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .page-summary {
+        .containter {
+            max-width: 768px;
+            margin: 50px auto 0;
+        }
+
+        p {
+            font-size: 1.2857rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+﻿.order-swapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-swapper .swap {
+    display: block;
+    width: 100%;
+}
+
+.order-swapper .swap:nth-child(1) {
+    order: 2;
+}
+
+.order-swapper .swap:nth-child(2) {
+    order: 1;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .order-swapper .swap:nth-child(1) {
+        order: 1;
+    }
+
+    .order-swapper .swap:nth-child(2) {
+        order: 2;
+    }
+}
