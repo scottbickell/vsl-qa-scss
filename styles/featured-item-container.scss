@@ -16,12 +16,28 @@
     height: 400px;
 }
 
+.fixed-height-desktop-450 {
+    height: 450px;
+}
+
+.fixed-height-desktop-500 {
+    height: 500px;
+}
+
+// add a border to the container
+
+.left-right-white-border {
+    border-left: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+}
+
 // apply this class to any button that needs to align to the bottom of the container
 
 .button-bottom {
     display: block;
     position: absolute;
     bottom: 20px;
+    margin: 0 auto;
 }
 
 // undo the container fixed height on mobile
@@ -31,8 +47,11 @@
     .fixed-height-desktop-250,
     .fixed-height-desktop-300,
     .fixed-height-desktop-350,
-    .fixed-height-desktop-400 {
+    .fixed-height-desktop-400,
+    .fixed-height-desktop-450,
+    .fixed-height-desktop-500 {
         height: auto;
+        border: none;
     }
 
     .button-bottom {
