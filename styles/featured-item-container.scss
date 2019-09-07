@@ -34,10 +34,11 @@
 // apply this class to any button that needs to align to the bottom of the container
 
 .button-bottom {
-    display: block;
+    box-sizing: border-box;
+    width: 90%;
     position: absolute;
     bottom: 20px;
-    margin: 0 auto;
+    left: 15px;
 }
 
 // undo the container fixed height on mobile
@@ -57,7 +58,8 @@
     .button-bottom {
         position: relative;
         bottom: auto;
-        display: inline-block;
+        width: 100%;
+        left: auto;
     }
 
 }

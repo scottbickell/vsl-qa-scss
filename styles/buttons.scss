@@ -172,3 +172,21 @@ fieldset[disabled] .btn-secondary.focus {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+.btn-literacy, .btn-literacy:active, .btn-literacy:visited, .btn-literacy:focus, .btn-literacy:hover {
+    color: #ffffff;
+    background-color: $vsl-literacy-yellow;
+    border-color: transparent;
+}
+
+.btn-math, .btn-math:active, .btn-math:visited, .btn-math:focus, .btn-math:hover {
+    color: #ffffff;
+    background-color: $vsl-math-green;
+    border-color: transparent;
+}
+
+.btn-pd, .btn-pd:active, .btn-pd:visited, .btn-pd:focus, .btn-pd:hover {
+    color: #ffffff;
+    background-color: $vsl-pd-orange;
+    border-color: transparent;
+}
