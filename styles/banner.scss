@@ -19,8 +19,8 @@
 
     h1, .h1 {
         line-height: 1.094em;
-        max-width: 420px;
-        margin: 15px auto;
+        // max-width: 420px;
+        // margin: 15px auto;
     }
 }
 
@@ -181,7 +181,7 @@
     }
 
     .banner-content {
-        max-width: 470px;
+        max-width: 600px;
         height: auto;
         top: auto;
         bottom: 0;
@@ -189,7 +189,7 @@
         left: calc((100% - 750px)/2);
 
         h1, .h1 {
-            font-size: 3.1429rem;
+            font-size: 2.75rem;
             text-align: left;
         }
 
@@ -406,7 +406,7 @@
     }
 
     .banner--home .banner-content {
-        padding: 65px 50px 45px;
+        padding: 30px;
     }
 
     .featured-banner {
@@ -445,7 +445,7 @@
 
     .banner-content {
         bottom: 0;
-        left: calc((100% - 1140px)/2);
+        left: calc((100% - 1140px)/4);
         position: absolute;
         top: auto;
     }

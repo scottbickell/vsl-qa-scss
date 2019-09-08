@@ -70,6 +70,10 @@ fieldset[disabled] a.btn {
     border-color: $btn-primary_border-color;
 }
 
+p a.btn, p a.btn-primary {
+    color: $btn-primary_color;
+}
+
 .btn-primary:focus, .btn-primary.focus {
     color: $btn-primary-focus_color;
     background-color: $btn-primary-focus_background-color;

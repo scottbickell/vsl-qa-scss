@@ -14,11 +14,11 @@
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .navbar > .container .navbar-brand img {
-    height: 55px;
+    height: 45px;
 }
 
 .navbar-default .navbar-toggle {
@@ -372,7 +372,7 @@
 @media only screen and (min-width : 992px) {
     .navbar > .container .navbar-brand {
         height: auto;
-        float: none;
+        float: left;
         display: inline-block;
         width: auto;
         transform: none;
@@ -380,9 +380,9 @@
 
     .desktop-nav li.no-dropdown a,
     .desktop-nav.nav > li > a {
-        font-size: 0.8571rem;
-        padding-left: 24px;
-        padding-right: 24px;
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 12px;
     }
 
