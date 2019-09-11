@@ -213,6 +213,20 @@
     bottom: 0;
     left: -5px;
 }
+
+// mobile 
+
+@media only screen and (max-width : 767px) {
+    .navbar > .container .navbar-brand img {
+        height: auto;
+    }
+
+    .banner--home h1 {
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .slide-menu-wrapper.open .slide-content {
@@ -268,6 +282,8 @@
         margin-left: auto;
         width: 100%;
     }
+
+
 
     .desktop-nav.nav {
         margin: 0 auto;

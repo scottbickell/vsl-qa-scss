@@ -38,97 +38,76 @@
     margin-bottom: 40px;
 }
 
-// fixed heights. required to make the button align to parent container bottom
+// generate fixed heights for desktop
 
-.fixed-height-desktop-250 {
-    height: 250px;
+$fixed-heights: 5px,
+10px,
+15px,
+20px,
+25px,
+30px,
+35px,
+40px,
+45px,
+50px,
+55px,
+60px,
+65px,
+70px,
+75px,
+80px,
+85px,
+90px,
+95px,
+100px,
+105px,
+110px,
+115px,
+120px,
+125px,
+130px,
+135px,
+140px,
+145px,
+150px,
+155px,
+160px,
+165px,
+170px,
+175px,
+180px,
+185px,
+190px,
+195px,
+200px,
+205px,
+210px,
+215px,
+220px,
+225px,
+230px,
+235px,
+240px,
+245px,
+250px,
+255px,
+260px,
+265px,
+270px,
+275px,
+280px,
+285px,
+290px,
+295px,
+300px;
+
+@each $height in $fixed-heights {
+    .fixed-height-desktop-#{$height} {
+        height: $height;
+    }
 }
 
-.fixed-height-desktop-300 {
-    height: 300px;
-}
-
-.fixed-height-desktop-310 {
-    height: 310px;
-}
-
-.fixed-height-desktop-320 {
-    height: 320px;
-}
-
-.fixed-height-desktop-330 {
-    height: 330px;
-}
-
-.fixed-height-desktop-340 {
-    height: 340px;
-}
-
-.fixed-height-desktop-350 {
-    height: 350px;
-}
-
-.fixed-height-desktop-360 {
-    height: 360px;
-}
-
-.fixed-height-desktop-370 {
-    height: 370px;
-}
-
-.fixed-height-desktop-380 {
-    height: 380px;
-}
-
-.fixed-height-desktop-390 {
-    height: 390px;
-}
-
-.fixed-height-desktop-400 {
-    height: 400px;
-}
-
-.fixed-height-desktop-410 {
-    height: 410px;
-}
-
-.fixed-height-desktop-420 {
-    height: 420px;
-}
-
-.fixed-height-desktop-430 {
-    height: 430px;
-}
-
-.fixed-height-desktop-440 {
-    height: 440px;
-}
-
-.fixed-height-desktop-450 {
-    height: 450px;
-}
-
-.fixed-height-desktop-460 {
-    height: 460px;
-}
-
-.fixed-height-desktop-470 {
-    height: 470px;
-}
-
-.fixed-height-desktop-480 {
-    height: 480px;
-}
-
-.fixed-height-desktop-490 {
-    height: 490px;
-}
-
-.fixed-height-desktop-500 {
-    height: 500px;
-}
-
-// add a border to the container
+// add a border to the featured item container
 
 .left-right-white-border {
     border-left: 10px solid #ffffff;
@@ -147,39 +126,72 @@
 
 // undo the container fixed height on mobile
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
 
-    .fixed-height-desktop-250,
-    .fixed-height-desktop-300,
-    .fixed-height-desktop-310,
-    .fixed-height-desktop-320,
-    .fixed-height-desktop-330,
-    .fixed-height-desktop-340,
-    .fixed-height-desktop-350,
-    .fixed-height-desktop-360,
-    .fixed-height-desktop-370,
-    .fixed-height-desktop-380,
-    .fixed-height-desktop-390,
-    .fixed-height-desktop-400,
-    .fixed-height-desktop-410,
-    .fixed-height-desktop-420,
-    .fixed-height-desktop-430,
-    .fixed-height-desktop-440,
-    .fixed-height-desktop-450,
-    .fixed-height-desktop-460,
-    .fixed-height-desktop-470,
-    .fixed-height-desktop-480,
-    .fixed-height-desktop-490,
-    .fixed-height-desktop-500 {
-        height: auto;
+    $fixed-heights: 5px,
+        10px,
+        15px,
+        20px,
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px,
+        55px,
+        60px,
+        65px,
+        70px,
+        75px,
+        80px,
+        85px,
+        90px,
+        95px,
+        100px,
+        105px,
+        110px,
+        115px,
+        120px,
+        125px,
+        130px,
+        135px,
+        140px,
+        145px,
+        150px,
+        155px,
+        160px,
+        165px,
+        170px,
+        175px,
+        180px,
+        185px,
+        190px,
+        195px,
+        200px,
+        205px,
+        210px,
+        215px,
+        220px,
+        225px,
+        230px,
+        235px,
+        240px,
+        245px,
+        250px,
+        255px,
+        260px,
+        265px,
+        270px,
+        275px,
+        280px,
+        285px,
+        290px,
+        295px,
+        300px;
+
+    @each $height in $fixed-heights {
+        .fixed-height-desktop-#{$height} {
+            height: auto;
+        }
     }
-
-    .button-bottom {
-        position: relative;
-        bottom: auto;
-        width: 100%;
-        left: auto;
-    }
-
 }
-
