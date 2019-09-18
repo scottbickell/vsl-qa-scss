@@ -2,10 +2,10 @@
 $default-theme-color: #005587;
 
 .banner-content {
-    background-color: rgba($default-theme-color,.9);
-    
-    .product-banner-text { 
-        background-color: rgba($default-theme-color,.9); 
+    background-color: rgba($default-theme-color, .9);
+
+    .product-banner-text {
+        background-color: rgba($default-theme-color, .9);
     }
 }
 
@@ -27,7 +27,7 @@ $default-theme-color: #005587;
 .default-theme {
 
     .banner-content {
-        background-color: rgba($default-theme-color,.9);
+        background-color: rgba($default-theme-color, .9);
     }
 
     .stat-number,
@@ -51,11 +51,11 @@ $literacy-theme-color: #ffbf3d;
 
 .literacy-theme {
 
-    .banner-content {
-        background-color: rgba($literacy-theme-color,.9);
-    
-        .product-banner-text { 
-            background-color: rgba($literacy-theme-color,.9); 
+    .banner-content, .product-banner-title {
+        background-color: rgba($literacy-theme-color, .9);
+
+        .product-banner-text {
+            background-color: rgba($literacy-theme-color, .9);
         }
     }
 
@@ -81,11 +81,11 @@ $math-theme-color: #ADD461;
 
 .math-theme {
 
-    .banner-content {
-        background-color: rgba($math-theme-color,.9);
-    
-        .product-banner-text { 
-            background-color: rgba($math-theme-color,.9); 
+    .banner-content, .product-banner-title {
+        background-color: rgba($math-theme-color, .9);
+
+        .product-banner-text {
+            background-color: rgba($math-theme-color, .9);
         }
     }
 
@@ -110,11 +110,11 @@ $math-theme-color: #ADD461;
 $professional-development-theme-color: #ff6d10;
 
 .professional-development-theme {
-    .banner-content {
-        background-color: rgba($professional-development-theme-color,.9);
-    
-        .product-banner-text { 
-            background-color: rgba($professional-development-theme-color,.9); 
+    .banner-content, .product-banner-title {
+        background-color: rgba($professional-development-theme-color, .9);
+
+        .product-banner-text {
+            background-color: rgba($professional-development-theme-color, .9);
         }
     }
 

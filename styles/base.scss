@@ -44,6 +44,7 @@ ul {
 
 li {
     line-height: $li_line-height;
+    margin-bottom: $li_margin-bottom;
 
     a, a:link, a:active, a:visited {
         color: #005587;
@@ -60,7 +61,6 @@ p, .p, article, .article {
         color: #005587;
     }
 }
-
 
 
 blockquote {
@@ -100,7 +100,7 @@ a:focus, a.focus {
     outline-offset: -2px;
 }
 
-h1, .h1 {
+h1, .h1, .accent-title1 {
     font-family: $h1_font-family;
     font-weight: $h1_font-weight;
     line-height: $h1_line-height;
@@ -119,7 +119,7 @@ h1 small, h1 .small, .h1 small, .h1 .small {
     color: $h1-small_color;
 }
 
-h2, .h2 {
+h2, .h2, .accent-title2 {
     font-family: $h2_font-family;
     font-weight: $h2_font-weight;
     line-height: $h2_line-height;
@@ -215,6 +215,32 @@ h6 small, h6 .small, .h6 small, .h6 .small {
     color: $h6-small_color;
 }
 
+.accent-text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.box {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.l-h-1-3 {
+    line-height: 1.3;
+}
+
+.l-h-1-5 {
+    line-height: 1.5;
+}
+
+.l-h-1-7 {
+    line-height: 1.7
+}
+
+.l-h-1-9 {
+    line-height: 1.9;
+}
 
 .primary-color {
     color: $primary-color;
@@ -338,6 +364,14 @@ h6 small, h6 .small, .h6 small, .h6 .small {
 
 .vsl-pd-orange_background {
     background-color: $vsl-pd-orange;
+}
+
+.vsl-blue-dark {
+    color: #1b3664;
+}
+
+.vsl-blue-dark_background {
+    background-color: #1b3664;
 }
 
 /*==========  Mobile First Method  ==========*/

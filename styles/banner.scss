@@ -1,5 +1,16 @@
 ﻿@import "variables";
 
+.product-banner-title {
+    h2, .h2, h1, .h1 {
+        text-align: center;
+        margin: 1rem 0;
+        color: #ffffff;
+        font-size: 2.4rem;
+        font-style: italic;
+    }
+}
+
+
 .banner {
     position: relative;
     background-position: center;
@@ -63,10 +74,11 @@
     }
 
     h2, .h2 {
-        font-size: 1.2857rem;
-        line-height: 1.2;
-        margin-top: 0;
-        margin-bottom: 10px;
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+        font-size: 2.4rem;
+        font-style: italic;
     }
 
     .product-banner-text {
@@ -141,13 +153,29 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .product-banner-text {
-        display: none;
+
+
+    // styles for product-banner-new.html
+    // remove after getting second solution working
+
+    .product-banner-title {
+        h2, .h2, h1, .h1 {
+            font-size: 1.75rem;
+        }
+    }
+
+    .product-banner-bg-image {
+        height: 160px;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+    .product-banner-bg-image {
+        height: 250px;
+    }
+
     .banner {
         height: 340px;
     }
@@ -335,6 +363,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
+    .product-banner-bg-image {
+        height: 420px;
+    }
+
     .banner {
         height: 490px;
     }
@@ -418,6 +450,11 @@
 }
 
 @media only screen and (min-width : 1200px) {
+
+    .product-banner-bg-image {
+        height: 450px;
+    }
+
     .banner {
         height: 490px;
     }
@@ -498,9 +535,6 @@
         height: 675px;
     }
 
-    .banner-content {
-    }
-
     .video-banner {
 
         .wistia_embed,
@@ -523,8 +557,6 @@
         height: 680px;
     }
 
-    .banner-content {
-    }
 
     .video-banner {
         background-image: none !important;

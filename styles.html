@@ -1,0 +1,347 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS used on voyagersopris.com</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bundle.min.css">
+    <style>
+        .col.dark,
+        .col.light {
+            font-family: Menlo, monospace;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        .dark {
+            color: #ffffff;
+        }
+
+        .light {
+            color: #000000;
+        }
+
+        .bigger {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        code {
+            color: #999;
+        }
+
+        .wrapper {
+            width: 400px;
+            margin: 1rem 0;
+        }
+
+        .new-defaults h1 {
+            font-size: 2.6rem;
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+        }
+
+        .new-defaults h2 {
+            font-size: 2.2rem;
+            font-weight: 200;
+            margin: 0;
+            padding: 0;
+        }
+
+        .new-defaults h3 {
+            font-size: 1.8rem;
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            font-weight: 200;
+        }
+
+        .new-defaults h4 {
+            font-size: 1.45rem;
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        .new-defaults h5 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        .new-defaults h6 {
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            font-weight: bold;
+        }
+
+        .new-defaults p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .new-defaults li {
+            line-height: 1.3rem;
+            margin-bottom: .5rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            .wrapper {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="bigger">Colors</h1>
+                <p>Each color is named using its CSS class name</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Background colors</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col primary-color_background dark">
+                primary-color_background
+            </div>
+            <div class="col primary-color-light_background light">
+                primary-color-light_background
+            </div>
+            <div class="col primary-color-dark_background dark">
+                primary-color-dark_background
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col secondary-color_background light">
+                secondary-color_background
+            </div>
+            <div class="col secondary-color-dark_background dark">
+                secondary-color-dark_background
+            </div>
+            <div class="col secondary-color-light_background light">
+                secondary-color-light_background
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col accent-color_background dark">
+                accent-color_background
+            </div>
+            <div class="col accent-color-light_background dark">
+                accent-color-light_background
+            </div>
+            <div class="col accent-color-dark_background dark">
+                accent-color-dark_background
+            </div>
+        </div>
+        <div class="row">
+            <div class="col i-am-more-red_background dark">
+                i-am-more-red_background
+            </div>
+            <div class="col i-am-more-purple_background dark">
+                i-am-more-purple_background
+            </div>
+            <div class="col letrs-red_background dark">
+                letrs-red_background
+            </div>
+        </div>
+        <div class="row">
+            <div class="col vsl-math-green_background dark">
+                vsl-math-green_background
+            </div>
+            <div class="col vsl-literacy-yellow_background dark">
+                vsl-literacy-yellow_background
+            </div>
+            <div class="col vsl-pd-orange_background dark">
+                vsl-pd-orange_background
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col vsl-blue-dark_background dark">
+                    vsl-blue-dark_background
+            </div>
+        </div>
+
+        <div class="row mt-20">
+            <div class="col">
+                <h3 class="i-am-more-red">i-am-more-red</h3>
+            </div>
+            <div class="col">
+                <h3 class="i-am-more-purple">i-am-more-purple</h3>
+            </div>
+            <div class="col">
+                <h3 class="vsl-math-green">vsl-math-green</h3>
+            </div>
+            <div class="col">
+                <h3 class="vsl-literacy-yellow">vsl-literacy-yellow</h3>
+            </div>
+            <div class="col">
+                <h3 class="vsl-pd-orange">vsl-pd-orange</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="vsl-blue-primary">vsl-blue-primary</h3>
+            </div>
+            <div class="col">
+                <h3 class="vsl-blue-secondary">vsl-blue-secondary</h3>
+            </div>
+            <div class="col">
+                    <h3 class="vsl-blue-dark">vsl-blue-dark</h3>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h1 class="bigger">Margin and padding classes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="mb-20">Padding</h2>
+                <pre>
+    .padding-40 {
+        padding: 40px;
+    }
+
+    .padding-20 {
+        padding: 20px;
+    }
+    </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Margin top</h2>
+                <pre>
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+    
+    .mt-20 {
+        margin-top: 20px;
+    }
+    
+    .mt-40 {
+        margin-top: 40px;
+    }
+        </pre>
+            </div>
+            <div class="col-md-6">
+                <h2>Margin bottom</h2>
+                <pre>
+
+    .mb-10 {
+        margin-top: 10px;
+    }
+    
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+    
+    .mb-40 {
+        margin-bottom: 40px;
+    }
+            </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h1 class="bigger">Responsive utilities</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Hard line break for small screens</h2>
+                <p><em>Not visible on medium or large screens</em></p>
+                <pre>&lt;br class="hardbreak-sm"&gt;</pre>
+
+            </div>
+            <div class="col-md-6">
+                <h2>Hard line break for large screens</h2>
+                <p><em>Not visible on medium or small screens</em><br>
+
+                </p>
+                <pre>&lt;br class="hardbreak-lg"&gt;</pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h1 class="bigger">Typography modifiers</h1>
+                <h2>Line height</h2>
+                <p>Use these classes to override the defaut <code>line-height</code> value of any element. </p>
+                <pre>
+
+    .l-h-1-3 {
+        line-height: 1.3;
+    }
+    
+    .l-h-1-5 {
+        line-height: 1.5;
+    }
+    
+    .l-h-1-7 {
+        line-height: 1.7
+    }
+    
+    .l-h-1-9 {
+        line-height: 1.9;
+    }
+                </pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h1 class="bigger">Font sizes</h1>
+                <h1><code>h1, .h1, .accent-title1</code><br>Lorem enibh modipsu essit utatum Secte adignim
+                    vulputat laore</h1>
+                <h2><code>h2, .h2, .accent-title2</code><br>Lorem enibh modipsu essit utatum, consequam nulput im.</h2>
+                <h3><code>h3, .h3</code> Lorem enibh modipsu essit utatum, consequam nulput im.</h3>
+                <h4><code>h4, .h4</code> Lorem enibh modipsu essit utatum, consequam nulput im.</h4>
+                <h5><code>h5, .h5</code> Lorem enibh modipsu essit utatum, consequam nulput im.</h5>
+                <h6><code>h6, .h6</code> Lorem enibh modipsu essit utatum, consequam nulput im.</h6>
+                <p class="wrapper"><code>p</code> Lorem enibh modipsu essit utatum, consequam nulput im.
+                    Ese elis fermentum molestie nullam
+                    modionsed eugiat mincidunt inciduipit. Secte adignim enississe sem varius dolendit tortor, iscipit
+                    vulputat laore, nulputpatum adiatet blamet vestibulum.Lorem enibh modipsu essit utatum, consequam
+                    nulput im.
+                    Ese elis fermentum molestie nullam
+                    modionsed eugiat mincidunt inciduipit. Secte adignim enississe sem varius dolendit tortor, iscipit
+                    vulputat laore, nulputpatum adiatet blamet vestibulum.</p>
+                <ul class="wrapper">
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im</li>
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im Secte adignim enississe sem varius dolendit tortor, iscipit
+                            vulputat laore, nulputpatum adiatet blamet</li>
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im Secte adignim enississe sem varius dolendit tortor, iscipit
+                            vulputat laore, nulputpatum adiatet blamet</li>
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im</li>
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im</li>
+                    <li>Lorem enibh modipsu essit utatum, consequam nulput im</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

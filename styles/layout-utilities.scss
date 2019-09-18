@@ -114,19 +114,26 @@ $fixed-heights: 5px,
     border-right: 10px solid #ffffff;
 }
 
-// apply this class to any button that needs to align to the bottom of the container
+// create hard linebreak for mobile 
+.hardbreak-sm {
+    display: none;
+}
 
-.button-bottom {
-    box-sizing: border-box;
-    width: 90%;
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
+.hardbreak-lg {
+    display: block;
 }
 
 // undo the container fixed height on mobile
 
 @media screen and (max-width: 767px) {
+
+    .hardbreak-sm {
+        display: block;
+    }
+
+    .hardbreak-lg {
+        display: none;
+    }
 
     $fixed-heights: 5px,
         10px,
