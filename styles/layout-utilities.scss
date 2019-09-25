@@ -16,8 +16,24 @@
     margin-top: 10px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-35 {
+    margin-top: 35px;
 }
 
 .mt-40 {
@@ -27,18 +43,34 @@
 // margin bottom
 
 .mb-10 {
-    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
 }
 
 .mb-20 {
     margin-bottom: 20px;
 }
 
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
 .mb-40 {
     margin-bottom: 40px;
 }
 
-// generate fixed heights for desktop
+// Generate fixed height paragraphs for desktop. Used to push button down to align them evenly.
 
 $fixed-heights: 5px,
 10px,

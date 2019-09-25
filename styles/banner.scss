@@ -10,6 +10,10 @@
     }
 }
 
+.product-banner-bg-image {
+    height: 250px;
+}
+
 
 .banner {
     position: relative;
@@ -152,11 +156,9 @@
     }
 }
 
+
 @media only screen and (max-width: 767px) {
 
-
-    // styles for product-banner-new.html
-    // remove after getting second solution working
 
     .product-banner-title {
         h2, .h2, h1, .h1 {
@@ -164,9 +166,6 @@
         }
     }
 
-    .product-banner-bg-image {
-        height: 160px;
-    }
 }
 
 /* Small Devices, Tablets */
@@ -504,6 +503,10 @@
 }
 
 @media only screen and (min-width : 1440px) {
+    .product-banner-bg-image {
+        height: 500px;
+    }
+    
     .banner {
         height: 588px;
     }
@@ -531,6 +534,10 @@
 }
 
 @media only screen and (min-width : 1740px) {
+    .product-banner-bg-image {
+        height: 600px;
+    }
+    
     .banner {
         height: 675px;
     }
@@ -553,6 +560,10 @@
 }
 
 @media only screen and (min-width : 2000px) {
+    .product-banner-bg-image {
+        height: 650px;
+    }
+    
     .banner {
         height: 680px;
     }

@@ -43,6 +43,8 @@
 @import "buttons";
 @import "layout-utilities";
 @import "image-hover-effect";
+@import "card-caption";
+
 
 
 
@@ -143,9 +145,7 @@
 
 
 .white-text {
-    p, h1, h2, h3, h4, h5, h6, li {
-        color: #ffffff;
-    }
+    color: #ffffff;
 }
 
 .materials-form {
@@ -167,6 +167,7 @@
     font-style: italic;
     padding: 5px 0;
 }
+
 
 
 

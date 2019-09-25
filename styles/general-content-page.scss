@@ -1,20 +1,37 @@
-﻿   .main-content{
-        margin:75px 0;
-    }
+﻿   .main-content {
+       margin: 75px 0;
+   }
 
-.general-content-page{
-    .banner{
-        height:275px;
-    }
+   // Target only the product pages that have the new image banner. Remove the massive margin on .main-content
 
- 
+   div.product-banner-bg-image~div div.main-content {
+       margin-top: 0;
+   }
 
-    ul{
-        padding-top:15px;
-        padding-left:25px;
-    }
-    ul li{
-        margin-bottom:10px;
-    }
+   div.product-banner-bg-image~div.page-summary {
+       padding-bottom: 20px;
+   }
 
-}
+   .general-content-page {
+       .banner {
+           height: 275px;
+       }
+
+
+
+       ul {
+           padding-top: 15px;
+           padding-left: 25px;
+       }
+
+       ul li {
+           margin-bottom: 10px;
+       }
+
+   }
+
+   @media only screen and (max-width: 767px) {
+       div.product-banner-bg-image~div div.main-content {
+           margin-top: auto;
+       }
+   }

@@ -1,10 +1,15 @@
-﻿
-.page-summary {
+﻿.page-summary {
     padding: 50px 15px;
     text-align: left;
     background-position-y: bottom;
     background-repeat: repeat-x;
 }
+
+// Target only the product pages that have the new image banner. Remove the massive margin on .main-content
+
+// div.product-banner-bg-image~div div.main-content {
+//     margin-top: 0;
+// }
 
 .page-summary .btn {
     width: auto;

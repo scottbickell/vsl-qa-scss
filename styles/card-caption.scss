@@ -1,0 +1,9 @@
+// hide the empty elements that are created by Card.Simple.cshtml
+
+.caption p:empty {
+    display: none;
+}
+
+.caption h3:empty {
+    display: none;
+}
