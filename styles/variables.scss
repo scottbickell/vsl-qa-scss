@@ -48,16 +48,18 @@ $i-am-more-purple: #351c55;
 
 // .vsl-math-green
 $vsl-math-green: #76bd22;
+$vsl-math-green_hover-background-color: darken($vsl-math-green, 20%);
 
 // .vsl-literacy-yellow
 $vsl-literacy-yellow: #ffbf3d;
+$vsl-literacy-yellow_hover-background-color: darken($vsl-literacy-yellow, 20%);
 
 // .vsl-pd-orange
 $vsl-pd-orange: #ff6d10;
-
+$vsl-pd-orange_hover-background-color: darken($vsl-pd-orange, 20%);
 
 ///:root
-$root_font-size: 14px;
+$root_font-size: 16px;
 
 
 ///body, .body-text

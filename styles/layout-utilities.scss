@@ -40,6 +40,14 @@
     margin-top: 40px;
 }
 
+.mt-45 {
+    margin-top: 45px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
 // margin bottom
 
 .mb-10 {
@@ -70,7 +78,7 @@
     margin-bottom: 40px;
 }
 
-// Generate fixed height paragraphs for desktop. Used to push button down to align them evenly.
+// Generate fixed height paragraphs for desktop. Used to push buttons down to align them evenly.
 
 $fixed-heights: 5px,
 10px,
@@ -155,9 +163,17 @@ $fixed-heights: 5px,
     display: block;
 }
 
+.text-center-sm {
+    text-align: center;
+}
+
 // undo the container fixed height on mobile
 
 @media screen and (max-width: 767px) {
+
+    .text-center-sm {
+        text-align: auto;
+    }
 
     .hardbreak-sm {
         display: block;
